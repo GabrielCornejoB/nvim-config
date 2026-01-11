@@ -2,8 +2,7 @@ require 'core.options'
 require 'core.keymaps'
 require 'core.custom.smart-comment-enter'
 
--- [[ Install `lazy.nvim` plugin manager ]]
---    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
+-- Lazy Plugin Manager Config
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
@@ -16,36 +15,9 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
--- [[ Configure and install plugins ]]
+-- Plugins installation & config
 require('lazy').setup({
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-            "nvim-tree/nvim-web-devicons", -- optional, but recommended
-        },
-        lazy = false, -- neo-tree will lazily load itself
-    },
-    {
-        "navarasu/onedark.nvim",
-        priority = 1000, -- make sure to load this before all the other start plugins
-        lazy = false,
-        config = function()
-            require('onedark').setup {
-                style = 'cool',
-                transparent = true,
-                code_style = {
-                    comments = 'italic',
-                    keywords = 'bold',
-                    functions = 'none',
-                    strings = 'none',
-                    variables = 'none'
-                }
-            }
-            require('onedark').load()
-        end
-    }
+    require 'plugins.neotree',
+    require 'plugins.one-dark-theme',
 })
 

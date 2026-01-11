@@ -27,8 +27,8 @@ vim.o.backspace = 'indent,eol,start'
 -- scroll
 vim.o.scrolloff = 7
 
---
---vim.o.showmode = true
+vim.o.showmode = true
 
 vim.o.fileencoding = 'utf-8'
 
+vim.opt.termguicolors = true

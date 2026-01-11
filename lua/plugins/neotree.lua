@@ -1,0 +1,14 @@
+return {
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v3.x',
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        'MunifTanjim/nui.nvim',
+        'nvim-tree/nvim-web-devicons'
+    },
+    lazy = false,
+    config = function()
+        -- Open neo-tree with SPC + e
+        vim.keymap.set('n', '<leader>e', ':Neotree toggle position=left<CR>', { noremap = true, silent = true })
+    end,
+}
