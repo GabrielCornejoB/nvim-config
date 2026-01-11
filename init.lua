@@ -19,5 +19,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
     require 'plugins.neotree',
     require 'plugins.one-dark-theme',
+    require 'plugins.lualine',
 })
 

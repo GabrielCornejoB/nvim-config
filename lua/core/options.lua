@@ -27,7 +27,7 @@ vim.o.backspace = 'indent,eol,start'
 -- scroll
 vim.o.scrolloff = 7
 
-vim.o.showmode = true
+vim.o.showmode = false
 
 vim.o.fileencoding = 'utf-8'
 
