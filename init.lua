@@ -1,6 +1,6 @@
 require 'core.options'
 require 'core.keymaps'
-require 'core.custom.smart-comment-enter'
+require 'custom.smart-comment-enter'
 
 -- Lazy Plugin Manager Config
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
@@ -17,8 +17,17 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins installation & config
 require('lazy').setup({
-    require 'plugins.neotree',
     require 'plugins.one-dark-theme',
+    require 'plugins.oil',
+    require 'plugins.treesitter',
     require 'plugins.lualine',
+    require 'plugins.which-key',
+    require 'plugins.telescope',
+    require 'plugins.todo',
+    require 'plugins.snacks',
+    require 'plugins.nvim-lspconfig', -- TODO: LSP Config
+    require 'plugins.mason', -- TODO: Mason
+    -- TODO: JDTLS
+    -- TODO: Auto-completions
+    -- TODO: Auto-parsing
 })
-
