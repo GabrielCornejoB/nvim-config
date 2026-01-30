@@ -3,7 +3,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Disable SPC default behavior
-vim.keymap.set({ 'n', 'v'}, '<Space>', '<Nop>', { silent = true })
+vim.keymap.set({'n', 'v'}, '<Space>', '<Nop>', { silent = true })
 
 -- Default opts
 local opts = { noremap = true, silent = true }
@@ -41,3 +41,6 @@ vim.keymap.set('n', '<leader>xs', ':close<CR>', { noremap = true, silent = true,
 -- Toggle line wrap
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
 
+-- Stay in visual mode whille identing
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left in visual mode" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
