@@ -1,6 +1,8 @@
+-- Tema del editor
 return {
-    'navarasu/onedark.nvim',
-    priority = 1000,
+    "navarasu/onedark.nvim",
+    commit = '213c23ae45a04797572242568d5d51937181792d',
+    priority = 1000, -- make sure to load this before all the other start plugins
     lazy = false,
     config = function()
         require('onedark').setup {
