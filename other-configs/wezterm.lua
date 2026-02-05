@@ -5,8 +5,8 @@ if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
-config.initial_cols = 140
-config.initial_rows = 48
+config.initial_cols = 200
+config.initial_rows = 60
 config.default_cursor_style = "SteadyBar"
 config.automatically_reload_config = true
 config.window_close_confirmation = "NeverPrompt"
@@ -17,25 +17,15 @@ config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.font_size = 14
 config.font = wezterm.font("JetBrains Mono", { weight = "Bold" })
-config.enable_tab_bar = true
+config.enable_tab_bar = false 
 config.window_padding = {
-	left = 8,
+	left = 24,
 	right = 0,
-	top = 2,
+	top = 18,
 	bottom = 0,
 }
-config.background = {
-	{
-		source = {
-			Color = "#282c35",
-		},
-		width = "100%",
-		height = "100%",
-		opacity = 0.90,
-	}
-}
 -- config.window_background_opacity = 0.3
-config.macos_window_background_blur = 20
+--config.macos_window_background_blur = 20
 config.keys = {
 	{ key = "Enter", mods = "CTRL", action = wezterm.action({ SendString = "\x1b[13;5u" }) },
 	{ key = "Enter", mods = "SHIFT", action = wezterm.action({ SendString = "\x1b[13;2u" }) },
@@ -73,4 +63,7 @@ config.hyperlink_rules = {
 		highlight = 1,
 	},
 }
+
+config.color_scheme = 'OneDark (base16)'
+
 return config
