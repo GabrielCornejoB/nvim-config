@@ -24,9 +24,10 @@ require('lazy').setup({
     require 'plugins.which-key',
     require 'plugins.telescope',
     require 'plugins.todo',
-    require 'plugins.snacks',
-    require 'plugins.nvim-lspconfig', -- TODO: LSP Config
-    require 'plugins.mason', -- TODO: Mason
+    require 'plugins.nvim-lspconfig',
+    require 'plugins.mason',
+    require 'plugins.mason-lspconfig',
+    require 'plugins.blink',
     -- TODO: JDTLS
     -- TODO: Auto-completions
     -- TODO: Auto-parsing
