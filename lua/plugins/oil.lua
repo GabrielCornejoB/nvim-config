@@ -10,6 +10,7 @@ return {
             view_options = {
                 show_hidden = true,
             },
+            skip_confirm_for_simple_edits = true,
             keymaps = {
                 ['<CR>'] = { 'actions.select' },
                 ['<C-p>'] = { 'actions.preview', opts = { split = 'belowright' } },
@@ -18,6 +19,7 @@ return {
                 ['-'] = { 'actions.parent', mode = 'n' },
                 ['_'] = { 'actions.open_cwd', mode = 'n' },
                 ['g.'] = { 'actions.toggle_hidden', mode = 'n' },
+                ["<C-c>"] = { "actions.close", mode = "n" },
             },
             use_default_keymaps = false,
         })
