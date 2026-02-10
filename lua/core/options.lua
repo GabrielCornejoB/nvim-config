@@ -44,3 +44,9 @@ vim.opt.backup = false -- disable backup file explorer
 vim.opt.splitbelow = true -- open horizontal splits below current window
 vim.opt.splitright = true -- open vertical splits right of current window
 vim.opt.cursorline = true
+
+-- diagnostics
+vim.diagnostic.config({
+    virtual_text = true, -- inline warnings
+    virtual_lines = false, -- newline warnings
+})
