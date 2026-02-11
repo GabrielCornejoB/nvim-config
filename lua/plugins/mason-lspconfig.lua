@@ -6,7 +6,7 @@ return {
         require("mason-lspconfig").setup({
             automatic_enable = {
                 'lua_ls',
-                'angular_ls',
+                'angularls',
                 'ts_ls',
             }
         })
