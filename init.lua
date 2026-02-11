@@ -20,7 +20,6 @@ require('lazy').setup({
     require 'plugins.one-dark-theme',
     require 'plugins.oil',
     require 'plugins.treesitter',
-    require 'plugins.treesitter-modules',
     require 'plugins.lualine',
     require 'plugins.which-key',
     require 'plugins.telescope',
@@ -29,7 +28,9 @@ require('lazy').setup({
     require 'plugins.mason',
     require 'plugins.mason-lspconfig',
     require 'plugins.blink',
+    require 'plugins.pretty-hover',
     -- TODO: JDTLS
     -- TODO: Auto-completions
     -- TODO: Auto-parsing
 })
+

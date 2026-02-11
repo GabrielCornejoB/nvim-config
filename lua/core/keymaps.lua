@@ -44,3 +44,7 @@ vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
 -- Stay in visual mode whille identing
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left in visual mode" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
+
+vim.keymap.set('n', 'K', function()
+    require('pretty_hover').hover()
+end, { desc = "Pretty Hover" })
