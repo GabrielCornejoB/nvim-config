@@ -35,7 +35,7 @@ return {
             },
             sections = {
                 lualine_a = { mode },
-                lualine_b = { 'branch' },
+                lualine_b = { { 'branch', icon = '' } },
                 lualine_c = { filename },
                 lualine_x = { diff, { 'encoding', cond = hide_in_width }, { 'filetype', cond = hide_in_width } },
                 lualine_y = { 'location' },
