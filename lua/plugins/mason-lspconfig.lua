@@ -1,4 +1,4 @@
--- compatibilidad entre nvim-lspconfig y mason, para configurar LSPs más fácilmente
+-- plugin for compatibility between mason & nvim-lspconfig 
 return {
     "williamboman/mason-lspconfig.nvim",
     dependencies = { 'mason.nvim', 'nvim-lspconfig' },
@@ -6,8 +6,7 @@ return {
         require("mason-lspconfig").setup({
             automatic_enable = {
                 'lua_ls',
-                'angularls',
-                'ts_ls',
+                'jdtls',
             }
         })
     end,

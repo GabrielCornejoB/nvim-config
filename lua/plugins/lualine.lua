@@ -1,4 +1,4 @@
--- Barrita bacana de abajo
+-- bottom bar with current file info 
 return {
     'nvim-lualine/lualine.nvim',
     commit = '47f91c416daef12db467145e16bed5bbfe00add8',

@@ -1,4 +1,4 @@
--- Explorador de archivos
+-- file explorer 
 return {
     'stevearc/oil.nvim',
     commit = 'f55b25e493a7df76371cfadd0ded5004cb9cd48a',

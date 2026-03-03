@@ -14,14 +14,8 @@ vim.keymap.set("i", "<M-BS>", "<C-u>", { noremap = true })
 -- Make that 'x' key deletion doesn't copies to clipboard
 vim.keymap.set('n', 'x', '"_x', opts)
 
--- Save file with control + s
-vim.keymap.set('n', '<C-s>', '<cmd> w <CR>', opts)
-
 -- Save file without auto-formatting
 vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
-
--- Quit file with control + q
-vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
 
 -- Move cursor between splits
 vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', opts)
@@ -48,3 +42,4 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
 vim.keymap.set('n', 'K', function()
     require('pretty_hover').hover()
 end, { desc = "Pretty Hover" })
+

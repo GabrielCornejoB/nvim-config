@@ -1,4 +1,4 @@
--- auto-complete
+-- auto-complete & suggestions
 return {
     'saghen/blink.cmp',
     dependencies = { 'rafamadriz/friendly-snippets' },

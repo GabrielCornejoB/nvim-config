@@ -1,4 +1,4 @@
--- Comentarios To-Do resaltados
+-- highlights to-do comments, and with telescope helps find all to-dos 
 return {
     "folke/todo-comments.nvim",
     cmd = { "TodoTrouble", "TodoTelescope" },

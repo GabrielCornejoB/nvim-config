@@ -1,3 +1,4 @@
+-- Continue comments on new line
 local function smart_enter()
   local line = vim.api.nvim_get_current_line()
   local col = vim.api.nvim_win_get_cursor(0)[2]
@@ -19,3 +20,4 @@ local function smart_enter()
 end
 
 vim.keymap.set("i", "<CR>", smart_enter, { expr = true })
+

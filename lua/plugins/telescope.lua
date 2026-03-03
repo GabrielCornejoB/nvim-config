@@ -1,4 +1,4 @@
--- Búsqueda de archivos, texto y buffers
+-- fuzzy finder for files, text and buffers 
 return {
     'nvim-telescope/telescope.nvim',
     commit = '3333a52ff548ba0a68af6d8da1e54f9cd96e9179',

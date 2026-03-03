@@ -29,6 +29,7 @@ require('lazy').setup({
     require 'plugins.mason-lspconfig',
     require 'plugins.blink',
     require 'plugins.pretty-hover',
+    require 'plugins.noice',
     -- TODO: JDTLS
     -- TODO: Auto-completions
     -- TODO: Auto-parsing

@@ -1,4 +1,4 @@
--- Tema del editor
+-- color theme 
 return {
     "navarasu/onedark.nvim",
     commit = '213c23ae45a04797572242568d5d51937181792d',
