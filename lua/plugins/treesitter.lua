@@ -2,7 +2,7 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     commit = 'f8bbc3177d929dc86e272c41cc15219f0a7aa1ac',
-    build = 'TSUpdate',
+    build = ':TSUpdate',
     config = function()
         require'nvim-treesitter'.install { 
                 "vim", "vimdoc", "lua",
