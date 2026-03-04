@@ -30,6 +30,8 @@ require('lazy').setup({
     require 'plugins.blink',
     require 'plugins.pretty-hover',
     require 'plugins.noice',
+    require 'plugins.trouble',
+    require 'plugins.nvim-jdtls',
     -- TODO: JDTLS
     -- TODO: Auto-completions
     -- TODO: Auto-parsing

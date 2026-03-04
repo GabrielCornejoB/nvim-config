@@ -6,7 +6,7 @@ return {
         require("mason-lspconfig").setup({
             automatic_enable = {
                 'lua_ls',
-                'jdtls',
+                -- 'jdtls',
             }
         })
     end,
